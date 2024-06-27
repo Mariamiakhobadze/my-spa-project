@@ -1,0 +1,79 @@
+// Variables for theme colors
+$light-theme-background: #ffffff;
+$dark-theme-background: #333333;
+$light-theme-text: #000000;
+$dark-theme-text: #ffffff;
+
+// Global styles
+body.light {
+  background-color: $light-theme-background;
+  color: $light-theme-text;
+}
+
+body.dark {
+  background-color: $dark-theme-background;
+  color: $dark-theme-text;
+}
+
+.header, .footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: lighten($light-theme-background, 10%);
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+// Additional styles for form and specific components
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-container input, .form-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-container button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
